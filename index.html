@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | Thutukuri Jagadeesh</title>
+<link rel="stylesheet" href="portfoliostyle.css">
+
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+<body class="bg-gray-50">
+<!-- Navigation -->
+<header class="fixed top-0 left-0 w-full bg-white shadow-sm z-50">
+<div class="container mx-auto px-4 md:px-6 lg:px-8">
+<nav class="flex items-center justify-between h-16 md:h-20">
+<a href="#" class="text-xl font-['Pacifico'] text-gray-800 dark:text-white">Thutukuri Jagadeesh</a>
+<!-- Theme Toggle -->
+<button id="theme-toggle" class="w-10 h-10 flex items-center justify-center text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full transition-colors">
+<i class="ri-sun-line dark:hidden"></i>
+<i class="ri-moon-line hidden dark:block"></i>
+</button>
+<!-- Desktop Navigation -->
+<div class="hidden md:flex items-center space-x-8">
+<a href="#home" class="nav-link text-gray-700 hover:text-primary font-bold text-lg transition-colors">Home</a>
+<a href="#about" class="nav-link text-gray-700 hover:text-primary font-bold text-lg transition-colors">About</a>
+<a href="#projects" class="nav-link text-gray-700 hover:text-primary font-bold text-lg transition-colors">Projects</a>
+<a href="#experience" class="nav-link text-gray-700 hover:text-primary font-bold text-lg transition-colors">Experience</a>
+<a href="#contact" class="nav-link text-gray-700 hover:text-primary font-bold text-lg transition-colors">Contact</a>
+</div>
+<!-- Mobile Navigation Button -->
+<label for="mobile-menu-toggle" class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700 cursor-pointer">
+<i class="ri-menu-line ri-lg"></i>
+</label>
+<input type="checkbox" id="mobile-menu-toggle" class="hidden">
+</nav>
+</div>
+<!-- Mobile Navigation Menu -->
+<div class="mobile-menu md:hidden bg-white shadow-lg absolute w-full transition-all duration-300 opacity-0 -translate-y-2 pointer-events-none">
+<div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
+<a href="#home" class="py-2 text-gray-700 hover:text-primary font-bold text-lg transition-colors">Home</a>
+<a href="#about" class="py-2 text-gray-700 hover:text-primary font-bold text-lg transition-colors">About</a>
+<a href="#projects" class="py-2 text-gray-700 hover:text-primary font-bold text-lg transition-colors">Projects</a>
+<a href="#education" class="py-2 text-gray-700 hover:text-primary font-bold text-lg transition-colors">Education</a>
+<a href="#certifications" class="py-2 text-gray-700 hover:text-primary font-bold text-lg transition-colors">Certifications</a>
+<a href="#contact" class="py-2 text-gray-700 hover:text-primary font-bold text-lg transition-colors">Contact</a>
+</div>
+</div>
+</header>
+<main class="pt-16 md:pt-20">
+<!-- Hero Section -->
+<!-- Tailwind CDN (include in <head>) -->
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" />
+
+<section id="home" class="min-h-screen flex flex-col justify-center bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-900 dark:to-gray-800 relative">
+  <div class="container mx-auto px-4 md:px-6 lg:px-8 py-16 md:py-24">
+
+    <!-- Profile Card -->
+    <div class="max-w-5xl mx-auto bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden mb-16">
+      <div class="flex flex-col md:flex-row">
+        
+        <!-- Image -->
+        <div class="md:w-1/3 p-6 md:p-8 flex justify-center items-center bg-gradient-to-br from-blue-100 to-indigo-200 dark:from-slate-800 dark:to-slate-700">
+          <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-md">
+            <img src="https://res.cloudinary.com/duaou63qp/image/upload/v1745139287/jagadeesh_dxhbud.jpg" alt="Jagadeesh"
+              class="w-full h-full object-cover object-top" />
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="md:w-2/3 p-6 md:p-8 text-gray-800 dark:text-gray-100">
+          <h1 class="text-3xl md:text-4xl font-bold mb-4">
+            <span class="text-gray-700 dark:text-gray-300">Hello, </span>
+            <span class="text-blue-700 dark:text-blue-400">I am </span>
+            <span class="multitext1 text-purple-600 dark:text-purple-400"></span>
+          </h1>
+
+          <p class="text-base md:text-lg leading-relaxed mb-6 text-gray-700 dark:text-gray-300">
+  Passionate <strong>AI/ML enthusiast</strong> and <strong>Python full stack developer</strong> skilled in 
+  <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>Python</strong>, and <strong>MySQL</strong>. 
+  Built real-world projects like <em>Employee Salary Prediction</em> and <em>Text-to-Speech apps</em>. 
+  Experienced in <strong>Machine Learning</strong>, <strong>NLP</strong>, and <strong>Computer Vision</strong> through 
+  internships with <strong>IBM SkillsBuild</strong> and <strong>Sattva Infotech</strong>.
+</p>
+
+
+
+          <a href="https://drive.google.com/file/d/1UkF3zPtmeX6sSDUNqx_tULrHNV96zLJT/view?usp=drivesdk"
+            class="inline-flex items-center px-5 py-2.5 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition whitespace-nowrap"
+            target="_blank">
+            <i class="ri-download-line mr-2"></i>
+            📄 Download My Resume (PDF)
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Text & Buttons Below -->
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 dark:text-gray-100 mb-6">
+        Crafting Digital <span class="text-blue-600 dark:text-blue-400">Experiences</span>
+      </h1>
+      <p class="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+        "Passionate about designing intuitive and user-focused digital interfaces that enhance everyday experiences.
+        Eager to contribute fresh ideas and creative energy to build impactful, engaging digital products."
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="#projects"
+          class="px-6 py-3 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 transition-colors">
+          View My Work
+        </a>
+        <a href="#contact"
+          class="px-6 py-3 bg-white text-gray-800 dark:bg-gray-800 dark:text-gray-100 font-medium border border-gray-300 dark:border-gray-700 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+          Get In Touch
+        </a>
+      </div>
+    </div>
+
+    <!-- Scroll Down Indicator -->
+    <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-center">
+      <div class="scroll-indicator w-8 h-8 flex items-center justify-center text-blue-600 dark:text-blue-400 mx-auto">
+        <i class="ri-arrow-down-line ri-lg"></i>
+      </div>
+      <span class="text-sm text-gray-500 dark:text-gray-400 mt-2">Scroll Down</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- About Section -->
+<section id="about" class="py-20 md:py-24 bg-white">
+<div class="container mx-auto px-4 md:px-6 lg:px-8">
+<div class="max-w-3xl mx-auto text-center mb-16">
+<h2 class="text-3xl font-bold text-blue-800 mb-4">About Me</h2>
+<div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+<p class="text-gray-600 font-15">
+Get to know more about my skills, experience, and approach to web development.
+</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+<div class="slide-in-left">
+<div>
+<h3 class="text-3xl font-bold text-blue-800 mb-4">My Journey</h3>
+<p class="text-gray-600 mb-4">
+I began my career in web development in 2021 after enrolling in a Bachelor's degree in Computer Applications at SV University. Since then, I have completed internships at Sattva and Young Minds Technologies, gaining hands-on experience in Python Full Stack Development
+</p>
+<p class="text-gray-600 mb-4">
+My approach combines strong technical expertise with a deep understanding of user experience principles. I believe the best digital products are those that solve real-world problems while remaining intuitive and enjoyable to use.
+</p>
+
+</div>
+
+<div class="skills-container">
+  <h2 class="text-3xl font-bold text-blue-800 mb-4">My Skills</h2>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab-btn active" onclick="openTab(event, 'technical')">Web Development</button>
+    <button class="tab-btn" onclick="openTab(event, 'technicalAi')">AI/ML</button>
+    <button class="tab-btn" onclick="openTab(event, 'soft')">Soft Skills</button>
+    <button class="tab-btn" onclick="openTab(event, 'tools')">Tools & Tech</button>
+  </div>
+
+  <!-- AI/ML Skills -->
+  <div class="tab-content" id="technicalAi">
+    <div class="skill scroll-animate" data-percent="85">
+      <div class="skill-info"><span><i class="fas fa-brain"></i> Machine Learning</span><span>75%</span></div>
+      <div class="skill-bar"><div class="skill-fill"></div></div>
+    </div>
+    <div class="skill scroll-animate" data-percent="80">
+      <div class="skill-info"><span><i class="fas fa-code"></i> Python Libraries</span><span>80%</span></div>
+      <div class="skill-bar"><div class="skill-fill"></div></div>
+    </div>
+    <div class="skill scroll-animate" data-percent="75">
+      <div class="skill-info"><span><i class="fas fa-comments"></i> NLP</span><span>75%</span></div>
+      <div class="skill-bar"><div class="skill-fill"></div></div>
+    </div>
+    <div class="skill scroll-animate" data-percent="70">
+      <div class="skill-info"><span><i class="fas fa-eye"></i> Computer Vision & Tools</span><span>70%</span></div>
+      <div class="skill-bar"><div class="skill-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- Placeholder for other tabs -->
+  <div class="tab-content active" id="technical">
+    <div class="skill scroll-animate" data-percent="90">
+      <div class="skill-info"><span>HTML5 </span><span>90%</span></div>
+      <div class="skill-bar"><div class="skill-fill"></div></div>
+    </div>
+    <div class="skill scroll-animate" data-percent="90">
+      <div class="skill-info"><span>CSS & Bootstrap</span><span>90%</span></div>
+      <div class="skill-bar"><div class="skill-fill"></div></div>
+    </div>
+    <div class="skill scroll-animate" data-percent="75">
+      <div class="skill-info"><span>JavaScript</span><span>75%</span></div>
+      <div class="skill-bar"><div class="skill-fill"></div></div>
+    </div>
+    <div class="skill scroll-animate" data-percent="85">
+      <div class="skill-info"><span>Python</span><span>85%</span></div>
+      <div class="skill-bar"><div class="skill-fill"></div></div>
+    </div>
+    <div class="skill scroll-animate" data-percent="90">
+      <div class="skill-info"><span>MySql</span><span>90%</span></div>
+      <div class="skill-bar"><div class="skill-fill"></div></div>
+    </div>
+  </div>
+
+  <div class="tab-content" id="soft">
+    <ul style="list-style-type: disc; padding-left: 2rem;">
+      <li>Teamwork</li>
+      <li>Problem Solving</li>
+      <li>Communication</li>
+      <li>Time Management</li>
+    </ul>
+  </div>
+
+  <div class="tab-content" id="tools">
+    <ul style="list-style-type: disc; padding-left: 2rem;">
+      <li>VS Code</li>
+      <li>Jupyter Notebook</li>
+      <li>Google Colab</li>
+      <li>GitHub</li>
+    </ul>
+  </div>
+</div></section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="py-20 md:py-24 bg-gray-50">
+<div class="container mx-auto px-4 md:px-6 lg:px-8">
+<div class="max-w-3xl mx-auto text-center mb-12">
+<h2 class="text-3xl font-bold text-blue-800 mb-4">My Projects</h2>
+<div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+<p class="text-gray-600 mb-8">
+A selection of my recent work across various fields and technologies.
+</p>
+<!--<div class="flex flex-wrap justify-center gap-3 mb-8">
+<button class="filter-button px-4 py-2 !rounded-button bg-white text-gray-700 border border-gray-300 hover:bg-gray-100 transition-colors whitespace-nowrap active">
+All Projects 
+</button> 
+
+</div> --->
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Project 1 -->
+<div class="project-card bg-white rounded-lg overflow-hidden shadow-sm fade-up">
+<div class="relative h-56 overflow-hidden">
+<img src="https://res.cloudinary.com/duaou63qp/image/upload/v1751615946/IMG_20250704_132525.png_lzvrfl.png" alt="TextSpeechify" height="80%" class=" object-cover object-top">
+<div class="project-overlay absolute inset-0 bg-primary bg-opacity-80 flex items-center justify-center p-4">
+<div class="text-center">
+<h4 class=" text-center text-white font-bold text-xl mb-2">TextSpeechify</h4>
+<p class="text-white text-sm mb-4"> Python, Html & Css,Javascript</p>
+<a href="#" class="inline-block px-4 py-2 bg-white text-primary font-medium !rounded-button hover:bg-gray-100 transition-colors whitespace-nowrap">
+View Details
+</a>
+</div>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800 mb-2">TextSpeechify</h3>
+<p class="text-gray-600 mb-4">
+TextSpeechify is a web application that converts text to speech, speech to text, and reads aloud content from PDF and DOCX files. It enhances accessibility and productivity with a responsive interface, audio/text downloads, and real-time conversion features.Build as Python Project in academics In MCA.
+
+</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Python</span>
+<span class="px-3 py-1 bg-green-100 text-green-800 text-xs rounded-full">Html & Css</span>
+<span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full">Javascript</span>
+</div>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="project-card bg-white rounded-lg overflow-hidden shadow-sm fade-up">
+<div class="relative h-56 overflow-hidden">
+<img src="https://res.cloudinary.com/duaou63qp/image/upload/v1751616057/Screenshot_2025-07-04_130926_ap4pya.png" alt="Flappy Bird Game" class="w-full h-full object-cover object-top">
+<div class="project-overlay absolute inset-0 bg-primary bg-opacity-80 flex items-center justify-center p-4">
+<div class="text-center">
+<h4 class="text-white font-bold text-xl mb-2">Flappy Bird Game</h4>
+<p class="text-white text-sm mb-4">Java, Html,Css,Js,SQL</p>
+<a href="#" class="inline-block px-4 py-2 bg-white text-primary font-medium !rounded-button hover:bg-gray-100 transition-colors whitespace-nowrap">
+View Details
+</a>
+</div>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800 mb-2">Flappy Bird Game</h3>
+<p class="text-gray-600 mb-4">
+The Flappy Bird Game allows players to enter their name, play with animated visuals, and tracks individual scores with high score saving per player. It features a scenic background, real-time score display, and personalized game-over messages for an engaging experience.Worked on project part of academics in MCA.
+</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-green-100 text-green-800 text-xs rounded-full">Java</span>
+<span class="px-3 py-1 bg-orange-100 text-orange-800 text-xs rounded-full">Html&Css,Js</span>
+<span class="px-3 py-1 bg-purple-100 text-purple-800 text-xs rounded-full">MySQL</span>
+</div>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="project-card bg-white rounded-lg overflow-hidden shadow-sm fade-up">
+<div class="relative h-56 overflow-hidden">
+<img src="https://res.cloudinary.com/duaou63qp/image/upload/v1751616525/Gemini_Generated_Image_pn9txbpn9txbpn9t_kzoznu.png" alt="Project Management Tool" class="w-full h-full object-cover object-top">
+<div class="project-overlay absolute inset-0 bg-primary bg-opacity-80 flex items-center justify-center p-4">
+<div class="text-center">
+<h4 class="text-white font-bold text-xl mb-2">Employee Salary Prediction</h4>
+<p class="text-white text-sm mb-4">Python & its Libraries, Machine Learning Algorithms</p>
+<a href="https://www.credly.com/badges/d3b32092-230e-4e07-b68a-f56f0fbdfa49/public_url" class="inline-block px-4 py-2 bg-white text-primary font-medium !rounded-button hover:bg-gray-100 transition-colors whitespace-nowrap">
+View Details
+</a>
+</div>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800 mb-2">Employee Salary Prediction</h3>
+<p class="text-gray-600 mb-4">
+This project predicts employee salaries using machine learning algorithms and Python libraries like pandas, scikit-learn, and matplotlib. Developed the project under <span class="text-blue-600"> Edunet Foundation Internship on IBM Skillbuild AI &ML</span>, it enables data-driven salary estimation based on experience and skill features.
+</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Python & libraries</span>
+<span class="px-3 py-1 bg-red-100 text-red-800 text-xs rounded-full">Machine Learning</span>
+<span class="px-3 py-1 bg-gray-100 text-gray-800 text-xs rounded-full">Google colab</span>
+</div>
+</div>
+</div>
+<!-- Project 4 -->
+<div class="project-card bg-white rounded-lg overflow-hidden shadow-sm fade-up">
+<div class="relative h-56 overflow-hidden">
+<img src="https://res.cloudinary.com/duaou63qp/image/upload/v1751635011/Screenshot_2025_0704_184622_fp73up.jpg" alt="My Portfolio Website" class="w-full h-full object-cover object-top">
+<div class="project-overlay absolute inset-0 bg-primary bg-opacity-80 flex items-center justify-center p-4">
+<div class="text-center">
+<h4 class="text-white font-bold text-xl mb-2">Sattva Infotech</h4>
+<p class="text-white text-sm mb-4">Duration -Jan 29 – May 11, 2024</p>
+<a href="https://julietjagadeesh.tiiny.site/" class="inline-block px-4 py-2 bg-white text-primary font-medium !rounded-button hover:bg-gray-100 transition-colors whitespace-nowrap">
+View Details
+</a>
+</div>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800 mb-2">My Blog website</h3>
+<p class="text-gray-600 mb-4">
+A creative and entertaining personal blog showcasing Juliet Jagadeesh’s web designing passion, acting talents, and college memories.
+It features themed character cards, travel vlogs like the Mamanduru trip, emotional dialogues, and fun reels from student life.
+The site blends humor, friendship, and creativity, offering a vibrant glimpse into personal experiences and joyful moments.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-red-100 text-red-800 text-xs rounded-full">Html & Css</span>
+<span class="px-3 py-1 bg-indigo-100 text-indigo-800 text-xs rounded-full">BootStrap</span>
+</div>
+</div>
+</div>
+<!-- Project 5 -->
+
+</div>
+</div>
+</section>
+
+
+<!-- Experiance Section  -->
+<section id="experience" class="py-20 md:py-24 bg-gray-50">
+<div class="container mx-auto px-4 md:px-6 lg:px-8">
+<div class="max-w-3xl mx-auto text-center mb-12">
+<h2 class="text-3xl font-bold text-blue-800 mb-4">Experience (Internship)</h2>
+<div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+<p class="text-gray-600 mb-8">
+My work experience and Internships in different fields and technologies.
+</p>
+</div>
+<!-- internships experience--->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  <!--- intern 1 -->
+<div class="project-card bg-white rounded-lg overflow-hidden shadow-sm fade-up">
+<div class="relative h-56 overflow-hidden">
+<img src="https://res.cloudinary.com/duaou63qp/image/upload/v1751631720/Gemini_Generated_Image_nh9o4lnh9o4lnh9o_kagr6z.png" alt="Project Management Tool" class="w-full h-full object-cover object-top">
+<div class="project-overlay absolute inset-0 bg-primary bg-opacity-80 flex items-center justify-center p-4">
+<div class="text-center">
+<h4 class="text-white font-bold text-xl mb-2">Edunet Foundation-IBM SkillsBuild</h4>
+<p class="text-white text-sm mb-4">Duration :Jun 18 – Jul 30, 2025</p>
+<a href="https://www.credly.com/badges/d3b32092-230e-4e07-b68a-f56f0fbdfa49/public_url " class="inline-block px-4 py-2 bg-white text-primary font-medium !rounded-button hover:bg-gray-100 transition-colors whitespace-nowrap">
+View Details
+</a>
+</div>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800 mb-2">AI/ML Internship</h3>
+<p class="text-gray-600 mb-4">
+Completed a 6-week AICTE-certified internship on Artificial Intelligence and Machine Learning via IBM SkillsBuild platform. Independently developed an Employee Salary Prediction project using Python, Pandas, NumPy, and Scikit-learn. Enhanced real-world problem-solving, model building, and presentation skills through mentor-guided sessions and self-paced learning.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Python & libraries</span>
+<span class="px-3 py-1 bg-red-100 text-red-800 text-xs rounded-full">Google Colab</span>
+<span class="px-3 py-1 bg-red-100 text-red-800 text-xs rounded-full"> Artificial intelligence & Machine learning </span>
+
+
+</div>
+<div class="flex flex-wrap justify-center gap-3 m-4">
+<a href="https://res.cloudinary.com/duaou63qp/image/upload/v1751730938/IBM_skillbuild_AI_full_course_certificate_page-0001_v5zxcc.jpg" target="_blank" class="view-link">
+  View Certificate
+  </a>
+  </div>
+</div>
+</div>
+
+<!-- Intern 2 -->
+ <div class="project-card bg-white rounded-lg overflow-hidden shadow-sm fade-up">
+<div class="relative h-56 overflow-hidden">
+<img src="https://res.cloudinary.com/duaou63qp/image/upload/v1751631720/Gemini_Generated_Image_1xf4701xf4701xf4_hba6in.png" alt="Project Management Tool" class="w-full h-full object-cover object-top">
+<div class="project-overlay absolute inset-0 bg-primary bg-opacity-80 flex items-center justify-center p-4">
+<div class="text-center">
+<h4 class="text-white font-bold text-xl mb-2">Sattva Infotech</h4>
+<p class="text-white text-sm mb-4">Duration :Jan 29 – May 11, 2024</p>
+<a href="https://www.sattvainfotech.com/" class="inline-block px-4 py-2 bg-white text-primary font-medium !rounded-button hover:bg-gray-100 transition-colors whitespace-nowrap">
+View Details
+</a>
+</div>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800 mb-2">Python Full Stack Internship</h3>
+<p class="text-gray-600 mb-4">
+Worked on end-to-end Python Full Stack projects using HTML, CSS, JavaScript,
+ Flask, and MySQL, delivering responsive web apps. Contributed significantly to real-time development tasks,
+  enhancing backend logic, UI integration, and database connectivity. Gained hands-on experience by working
+   on My Portfolio project & in full lifecycle development,
+ boosting problem-solving, team collaboration, and deployment skills done as a part of Academics.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Python</span>
+<span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Html,Css,Js</span>
+<span class="px-3 py-1 bg-gray-100 text-gray-800 text-xs rounded-full">Mysql</span>
+</div>
+<div class="flex flex-wrap justify-center gap-3 m-4">
+<a href="https://res.cloudinary.com/duaou63qp/image/upload/v1751626128/sattva_certiificate_xbchgm.jpg" target="_blank" class="view-link">
+  View Certificate
+  </a>
+  </div>
+</div>
+</div>
+
+<!-- Intern 3 -->
+ <div class="project-card bg-white rounded-lg overflow-hidden shadow-sm fade-up">
+<div class="relative h-56 overflow-hidden">
+<img src="https://res.cloudinary.com/duaou63qp/image/upload/v1751632254/Gemini_Generated_Image_ugfqvjugfqvjugfq_myrj4i.png" alt="Flappy Bird Game" class="w-full h-full object-cover object-top">
+<div class="project-overlay absolute inset-0 bg-primary bg-opacity-80 flex items-center justify-center p-4">
+<div class="text-center">
+<h4 class="text-white font-bold text-xl mb-2">Tech Mahindra Limited</h4>
+<p class="text-white text-sm mb-4">Duration :Jan 31 – April 21, 2024</p>
+</div>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800 mb-2">Trainee- Associate</h3>
+<p class="text-gray-600 mb-4">
+Worked on the Flipkart voice support process, ensuring seamless customer service operations
+. Handled high-volume queries with accuracy and professionalism, improving customer satisfaction metrics
+. Developed communication, issue resolution, and process adherence skills in a fast-paced BPO environment
+. Went on Graduation final semester as intern purpose to know the Company environments in Non tech.
+
+
+</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-green-100 text-green-800 text-xs rounded-full"> Non technical</span>
+</div>
+<div class="flex flex-wrap justify-center gap-3 m-4">
+<a href="https://res.cloudinary.com/duaou63qp/image/upload/v1751630347/Tech_Mahindra_Service_letter_zzvfz7.jpg" target="_blank" class="view-link">
+  View Certificate
+  </a>
+  </div>
+</div>
+</div>
+<!-- Project 4 -->
+<div class="project-card bg-white rounded-lg overflow-hidden shadow-sm fade-up">
+<div class="relative h-56 overflow-hidden">
+<img src="https://res.cloudinary.com/duaou63qp/image/upload/v1751631819/Gemini_Generated_Image_9kycmz9kycmz9kyc_pvf6fe.png" alt="Flappy Bird Game" class="w-full h-full object-cover object-top">
+<div class="project-overlay absolute inset-0 bg-primary bg-opacity-80 flex items-center justify-center p-4">
+<div class="text-center">
+<h4 class="text-white font-bold text-xl mb-2">YoungMinds Technology Solutions</h4>
+<p class="text-white text-sm mb-4">Duration :Aug 1 – Sep 15, 2023</p>
+<a href="https://ymtsindia.com/" class="inline-block px-4 py-2 bg-white text-primary font-medium !rounded-button hover:bg-gray-100 transition-colors whitespace-nowrap">
+View Details
+</a>
+</div>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-800 mb-2">Python Programming Internship</h3>
+<p class="text-gray-600 mb-4">
+Worked on Python-based development and support projects in a collaborative environment. Focused on logic building, debugging, and understanding core development workflows.
+ Built a solid foundation in backend coding and collaborative development, helping meet real-time project goals efficiently.  Strengthening foundational Python skills and applying them in basic projects done as a part of Academics.
+
+</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-green-100 text-green-800 text-xs rounded-full"> Core Python</span>
+<span class="px-3 py-1 bg-orange-100 text-orange-800 text-xs rounded-full">Jupiter</span>
+
+</div>
+<div class="flex flex-wrap justify-center gap-3 m-8">
+<a href="https://res.cloudinary.com/duaou63qp/image/upload/v1751626128/young_minds_certificate_l93mhd.jpg" target="_blank" class="view-link">
+  View Certificate
+  </a>
+  </div>
+</div>
+</div>
+
+
+</div>
+</div>
+</section>
+
+<!-- Education Section -->
+<section id="education" class="py-20 md:py-24 bg-white">
+<div class="container mx-auto px-4 md:px-6 lg:px-8">
+<div class="max-w-3xl mx-auto text-center mb-16">
+<h2 class="text-3xl font-bold text-blue-800 mb-4">Education    </h2>
+<div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+<p class="text-gray-600">My academic journey and educational background</p>
+</div>
+<div class="max-w-4xl mx-auto">
+<div class="space-y-8">
+<div class="bg-white rounded-lg p-6 shadow-sm fade-up">
+<div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+<div>
+<h3 class="text-xl font-bold text-gray-800">Master of Computer Applications <span class= "text-gray-400"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Pursuing</span></h3>
+<p class="text-primary font-medium">Presidency University</p>
+</div>
+<p class="text-gray-600 mt-2 md:mt-0">2024 - 2026</p>
+</div>
+<p class="text-gray-600 mb-4">The MCA program primarily focuses on software development, programming, and application design using modern technologies. It equips students with skills in coding, databases, web technologies, and project management for IT careers..</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Object-oriented programming in Java</span>
+<span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Data Structures in C++</span>
+<span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">DataBase Management System</span>
+<span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Artificial Intelligence
+</span>
+</div>
+</div>
+<div class="bg-white rounded-lg p-6 shadow-sm fade-up">
+<div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+<div>
+<h3 class="text-xl font-bold text-gray-800">Bachelor of Computer Applications    <span class= "text-gray-400"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- CGPA : 8.6</span></h3>
+<p class="text-primary font-medium">SV University (Gate Degree College)</p>
+</div>
+<p class="text-gray-600 mt-2 md:mt-0">2021 - 2024</p>
+</div>
+<p class="text-gray-600 mb-4">Graduated with honors. Completed internships with Young Minds Technologis Pvt & Sattva Infotech.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Web and Mobile Development</span>
+<span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Database Management</span>
+<span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Object-Oriented Software Engineering</span>
+</div>
+</div>
+</div>
+
+<div class="bg-white rounded-lg p-6 shadow-sm fade-up">
+<div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+<div>
+<h3 class="text-xl font-bold text-gray-800">Higher Secondary Education(Intermediate)   <span class= "text-gray-400"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Percent : 83.4%</span></h3>
+<p class="text-primary font-medium">Jawahar Navodaya Vidyalaya Samiti (CBSE)</p>
+</div>
+<p class="text-gray-600 mt-2 md:mt-0">2018 - 2020</p>
+</div>
+<p class="text-gray-600 mb-4">Studied branch of Science i.e BIPC .</p>
+</div>
+
+ 
+ <div class="bg-white rounded-lg p-6 shadow-sm fade-up">
+<div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+<div>
+<h3 class="text-xl font-bold text-gray-800">10th Class      <span class= "text-gray-400"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- CGPA : 9.5</span> </h3>
+<p class="text-primary font-medium">AP Model School (state Board)</p>
+</div>
+<p class="text-gray-600 mt-2 md:mt-0">2017 - 2018</p>
+</div>
+</div>  
+</div>
+</div>
+</section>
+<!-- Certifications Section -->
+<section id="certifications"class="py-20 md:py-24 bg-gray-50">
+<div class="container mx-auto px-4 md:px-6 lg:px-8">
+<div class="max-w-3xl mx-auto text-center mb-16">
+<h2 class="text-3xl font-bold text-blue-800 mb-4">Certifications</h2>
+<div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+<p class="text-gray-600">Professional certifications and achievements</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+  <div class="bg-white rounded-lg p-6 shadow-sm fade-up">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 text-primary rounded-lg mb-4">
+    <i class="ri-google-line ri-xl"></i>
+    </div>
+    <h3 class="text-xl font-bold text-gray-800 mb-2">Artificial Intelligence Fundamentals </h3>
+    <p class="text-gray-600 mb-4">IBM SkillsBuild -Edunet Foundation </p>
+    <div class="flex justify-between items-center">
+    <span class="text-sm text-gray-500">Issued June 2025</span>
+    <a href="https://res.cloudinary.com/duaou63qp/image/upload/v1751730938/IBM_skillbuild_AI_full_course_certificate_page-0001_v5zxcc.jpg" class="text-primary hover:text-blue-600 flex items-center">
+    View Certificate
+    <i class="ri-external-link-line ml-1"></i>
+    </a>
+</div>
+</div>
+  <div class="bg-white rounded-lg p-6 shadow-sm fade-up">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 text-primary rounded-lg mb-4">
+    <i class="ri-google-line ri-xl"></i>
+    </div>
+    <h3 class="text-xl font-bold text-gray-800 mb-2">Google Analytics Certification </h3>
+    <p class="text-gray-600 mb-4">Google </p>
+    <div class="flex justify-between items-center">
+    <span class="text-sm text-gray-500">Issued May 2025</span>
+    <a href="https://res.cloudinary.com/duaou63qp/image/upload/v1751720612/Thutukuri_jagadeesh_GOOGLE_analytics_certified_ypajvp.png" class="text-primary hover:text-blue-600 flex items-center">
+    View Certificate
+    <i class="ri-external-link-line ml-1"></i>
+    </a>
+</div>
+</div>
+<div class="bg-white rounded-lg p-6 shadow-sm fade-up">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 text-primary rounded-lg mb-4">
+<i class="ri-award-line ri-xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-2">Tata Group - Cybersecurity Analyst Job Simulation</h3>
+<p class="text-gray-600 mb-4">Forage</p>
+<div class="flex justify-between items-center">
+<span class="text-sm text-gray-500">Issued March 2025</span>
+<a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/gmf3ypEXBj2wvfQWC_ifobHAoMjQs9s6bKS_ZuoBfXKErWaxqAx5t_1740880092466_completion_certificate.pdf" class="text-primary hover:text-blue-600 flex items-center">
+View Certificate
+<i class="ri-external-link-line ml-1"></i>
+</a>
+</div>
+</div>
+<div class="bg-white rounded-lg p-6 shadow-sm fade-up">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 text-primary rounded-lg mb-4">
+    <i class="ri-google-line ri-xl"></i>
+    </div>
+    <h3 class="text-xl font-bold text-gray-800 mb-2">TCS Inter-Personal, Career Edge Young Professional </h3>
+    <p class="text-gray-600 mb-4">TCS ION </p>
+    <div class="flex justify-between items-center">
+    <span class="text-sm text-gray-500">Issued Mar 2025</span>
+    <a href="https://res.cloudinary.com/duaou63qp/image/upload/v1751721706/TCS_career_edge_young_professional_Certificate_ucy8d1.jpg" class="text-primary hover:text-blue-600 flex items-center">
+View Certificate
+<i class="ri-external-link-line ml-1"></i>
+</a>
+</div>
+</div>
+<div class="bg-white rounded-lg p-6 shadow-sm fade-up">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 text-primary rounded-lg mb-4">
+<i class="ri-google-line ri-xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-2">Responsive Web Development with HTML5, CSS3, Javascript</h3>
+<p class="text-gray-600 mb-4">Infosys SpringBoard</p>
+<div class="flex justify-between items-center">
+<span class="text-sm text-gray-500">Issued Feb 2025</span>
+<a href="https://res.cloudinary.com/duaou63qp/image/upload/v1745124988/HTMLCSS_JS_INFOSYS_SPRING_CERTificate_-_Copy_page-0001_lvk2ni.jpg" class="text-primary hover:text-blue-600 flex items-center">
+View Certificate
+<i class="ri-external-link-line ml-1"></i>
+</a>
+</div>
+</div>
+
+<div class="bg-white rounded-lg p-6 shadow-sm fade-up">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 text-primary rounded-lg mb-4">
+<i class="ri-reactjs-line ri-xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-2">Python Essentials</h3>
+<p class="text-gray-600 mb-4">Cisco Networking Academy</p>
+<div class="flex justify-between items-center">
+<span class="text-sm text-gray-500">Issued Feb  2025</span>
+<a href="https://res.cloudinary.com/duaou63qp/image/upload/v1740227861/PythonEssentials1_wayfcv.jpg" class="text-primary hover:text-blue-600 flex items-center">
+View Certificate
+<i class="ri-external-link-line ml-1"></i>
+</a>
+</div>
+</div>
+<div class="bg-white rounded-lg p-6 shadow-sm fade-up">
+    <div class="w-12 h-12 flex items-center justify-center bg-blue-100 text-primary rounded-lg mb-4">
+    <i class="ri-microsoft-line ri-xl"></i>
+    </div>
+    <h3 class="text-xl font-bold text-gray-800 mb-2">MYSQL</h3>
+    <p class="text-gray-600 mb-4">Great Learning</p>
+    <div class="flex justify-between items-center">
+    <span class="text-sm text-gray-500">Issued Feb 2025</span>
+    <a href="https://res.cloudinary.com/duaou63qp/image/upload/v1745124989/great_learning_SQL_certificate_page-0001_vojlth.jpg" class="text-primary hover:text-blue-600 flex items-center">
+    View Certificate
+    <i class="ri-external-link-line ml-1"></i>
+    </a>
+    </div>
+    </div>
+<div class="bg-white rounded-lg p-6 shadow-sm fade-up">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 text-primary rounded-lg mb-4">
+<i class="ri-vuejs-line ri-xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-2">Python Full Stack Development</h3>
+<p class="text-gray-600 mb-4">Sattva Infotech</p>
+<div class="flex justify-between items-center">
+<span class="text-sm text-gray-500">Issued May 2024</span>
+<a href="https://res.cloudinary.com/duaou63qp/image/upload/v1745122613/sattva_certiificate_zmfctd.jpg" class="text-primary hover:text-blue-600 flex items-center">
+View Certificate
+<i class="ri-external-link-line ml-1"></i>
+</a>
+</div>
+</div>
+<div class="bg-white rounded-lg p-6 shadow-sm fade-up">
+<div class="w-12 h-12 flex items-center justify-center bg-blue-100 text-primary rounded-lg mb-4">
+<i class="ri-database-2-line ri-xl"></i>
+</div>
+<h3 class="text-xl font-bold text-gray-800 mb-2">Python </h3>
+<p class="text-gray-600 mb-4">Young Minds Technologies pvt</p>
+<div class="flex justify-between items-center">
+<span class="text-sm text-gray-500">Issued sep 2023</span>
+<a href="https://res.cloudinary.com/duaou63qp/image/upload/v1745140370/young_minds_certificate_plzoiv.jpg" class="text-primary hover:text-blue-600 flex items-center">
+View Certificate
+<i class="ri-external-link-line ml-1"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="py-20 md:py-24 bg-white">
+<div class="container mx-auto px-4 md:px-6 lg:px-8">
+<div class="max-w-3xl mx-auto text-center mb-16">
+<h2 class="text-3xl font-bold text-blue-800 mb-4">Get In Touch</h2>
+<div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+<p class="text-gray-600">
+Have a project in mind or want to discuss a potential collaboration? Feel free to reach out!
+</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+<div class="slide-in-left">
+<div>
+<h3 class="text-3xl font-bold text-blue-800 mb-4">Contact Information</h3>
+<div class="space-y-6">
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-blue-100 text-primary rounded-full mr-4">
+<i class="ri-map-pin-line"></i>
+</div>
+<div>
+<h4 class="text-lg font-medium text-gray-800 mb-1">Location</h4>
+<p class="text-gray-600">NR Boys PG,Itlagapura Road,Rajanukunte, Presidency University, Bengaluru-560025, India</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-blue-100 text-primary rounded-full mr-4">
+<i class="ri-mail-line"></i>
+</div>
+<div>
+<h4 class="text-lg font-medium text-gray-800 mb-1">Email</h4>
+<p class="text-gray-600">jagadeeshthutukuri@gmail.com</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 flex items-center justify-center bg-blue-100 text-primary rounded-full mr-4">
+<i class="ri-phone-line"></i>
+</div>
+<div>
+<h4 class="text-lg font-medium text-gray-800 mb-1">Phone</h4>
+<p class="text-gray-600">+91 6302330371</p>
+</div>
+</div>
+</div>
+<div class="mt-10 mb-10">
+<h3 class="text-lg font-bold text-gray-800 mb-4">Connect With Me</h3>
+<div class="flex space-x-4">
+<a href="http://www.linkedin.com/in/thutukuri-jagadeesh" class="social-icon social-linkedin w-12 h-12 flex items-center justify-center rounded-full">
+<i class="ri-linkedin-fill"></i>
+</a>
+<a href="https://github.com/Jagadeeshthutukuri" class="social-icon social-github w-12 h-12 flex items-center justify-center rounded-full">
+<i class="ri-github-fill"></i>
+</a>
+<a href="https://x.com/JagadeeshJuliet?s=08" class="social-icon social-twitter w-12 h-12 flex items-center justify-center rounded-full">
+<i class="ri-twitter-fill"></i>
+</a>
+<a href="https://www.facebook.com/jagadeesh.thutukuri" class="social-icon social-facebook w-12 h-12 flex items-center justify-center rounded-full">
+<i class="ri-facebook-fill"></i>
+</a>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+</main>
+
+<footer class="bg-gray-900 text-white py-12">
+<div class="container mx-auto px-4 md:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+<div class="md:col-span-2">
+<a href="#" class="text-2xl font-['Pacifico'] text-white mb-4 inline-block">Thutukuri Jagadeesh</a>
+
+
+</div>
+<div>
+<h3 class="text-lg font-bold mb-4">Quick Links</h3>
+<ul class="space-y-2">
+<li><a href="#home" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+<li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+<li><a href="#projects" class="text-gray-400 hover:text-white transition-colors">Projects</a></li>
+<li><a href="#experience" class="text-gray-400 hover:text-white transition-colors">Experience</a></li>
+<li><a href="#certifications" class="text-gray-400 hover:text-white transition-colors">Certifications</a></li>
+<li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-bold mb-4">Contact</h3>
+<ul class="space-y-2">
+<li class="flex items-center text-gray-400">
+<i class="ri-map-pin-line mr-2"></i>
+NR Boys PG,Itlagapura Road,Rajanukunte, Presidency University,Bengaluru-560025, India</li>
+<li class="flex items-center text-gray-400">
+<i class="ri-mail-line mr-2"></i>
+jagadeeshthutukuri@gmail.com
+</li>
+<li class="flex items-center text-gray-400">
+<i class="ri-phone-line mr-2"></i>
++91 6302330371
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-500 text-sm mb-4 md:mb-0">
+© 2025 Thutukuri Jagadeesh. All rights reserved.
+</p>
+<div class="flex space-x-6">
+<a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">Privacy Policy</a>
+<a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">Terms of Service</a>
+<a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">Cookie Policy</a>
+</div>
+</div>
+</div>
+<div class="fixed bottom-6 right-6">
+<a href="#home" class="w-12 h-12 flex items-center justify-center bg-primary text-white rounded-full shadow-lg hover:bg-blue-600 transition-colors">
+<i class="ri-arrow-up-line ri-lg"></i>
+</a>
+</div>
+</footer>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  var typingEffect = new Typed(".multitext1", {
+    strings: ["Full Stack Developer", "Web Developer", "Programmer", "Tech Enthusiast"],
+    loop: true,
+    typeSpeed: 50,
+    backSpeed: 60,
+    backDelay: 1500
+  });
+</script>
+<script src="portfolioscript.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
